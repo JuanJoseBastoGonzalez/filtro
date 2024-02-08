@@ -12,18 +12,29 @@
    height: 200px;
    width: auto;
 }
-.foto:hover {
-    .foto2{
-    height: 200px;
-    width: auto;
-    opacity: 1;
-    }
- }
+
 .foto2{
     position: relative;
     margin: 100px 50px;
     width: 300px;
     height: auto;
     border: black solid;
-    opacity: 0
+    opacity: 1
+}
+
+.foto:hover{
+    height: 200px;
+    width: auto;
+   
+    cursor: cell; 
+    .foto2{
+        height: 200px;
+        width: auto;
+        opacity: 0;
+        cursor: cell;
+    }
+}
+.info{
+    display: grid;
+    grid-template-columns: 10% 80% 10%
 }
